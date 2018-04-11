@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/mz':{//当被请求以/mz开头时，是要我们代理去访问别的网站。对url进行处理
+        //内置服务器实际要访问的网址，以url方式加在mz之后
+        target:'http://damaimaitian.oss-cn-beijing.aliyuncs.com/',
+        changeOrigin:true,//是否要改变/mz
+        pathRewrite:{
+          '^/mz':''//正则表达式，把以mz开头的字符串替换为空
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
