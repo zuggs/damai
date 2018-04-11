@@ -1,8 +1,8 @@
-# damai_vue
+# 这是基于Vue的大麦网站项目
 
 > A Vue.js project
 
-## Build Setup
+## 网站链接：m.damai.cn
 
 ``` bash
 # install dependencies
