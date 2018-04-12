@@ -12,11 +12,11 @@ export default new Router({
       redirect: '/index'//路由重定向，当路径为空时，进入的路由路径
     },{
       path: '/index',
-      name: 'Index',
+      name: 'index',
       component: Index
     },{   
       path: '/user',
-      name: 'User',
+      name: 'user',
       component: User
     }
   ]

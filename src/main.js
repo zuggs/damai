@@ -7,7 +7,6 @@ import './stylesheets/main.scss';//引入scss文件
 import axios from 'axios';//因为在node-modules，所以可以直接使用，不用加路径
 Vue.config.productionTip = false;
 Vue.prototype.$http=axios;
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

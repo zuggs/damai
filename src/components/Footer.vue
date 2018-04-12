@@ -1,13 +1,13 @@
 <template>
   <footer class="footer">
-    <rooter-link class="footer-menu" href='#/'>
+    <router-link class="footer-menu" :to='{name:"index"}'>
       <i class="fa fa-home"></i>
       <p>首页</p>
-    </rooter-link>
-    <a class="footer-menu" href='#/user'>
+    </router-link>
+    <router-link class="footer-menu" to='user'>
       <i class="fa fa-user"></i>
       <p>我的大麦</p>
-    </a>
+    </router-link>
   </footer>
 </template>
 

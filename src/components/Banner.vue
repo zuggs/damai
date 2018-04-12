@@ -56,7 +56,7 @@ export default {
 
 
 <style lang="scss">
-.swiper-pagination-bullet{background:#fafafa}
+.swiper-pagination-bullet{background:#fafafa;transform:scale(.65)}
 .swiper-pagination-bullet-active{background:#fff}
 .banner{width:100%}
 </style>
