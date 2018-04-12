@@ -8,7 +8,10 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '',
+      redirect: '/index'//路由重定向，当路径为空时，进入的路由路径
+    },{
+      path: '/index',
       name: 'Index',
       component: Index
     },{   

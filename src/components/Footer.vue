@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
-    <a class="footer-menu" href='#/'>
+    <rooter-link class="footer-menu" href='#/'>
       <i class="fa fa-home"></i>
       <p>首页</p>
-    </a>
+    </rooter-link>
     <a class="footer-menu" href='#/user'>
       <i class="fa fa-user"></i>
       <p>我的大麦</p>
