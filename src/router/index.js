@@ -22,9 +22,9 @@ export default new Router({
     }
   ]
 });
-router.afterEach((to, from) => {
+/* Router.afterEach((to, from) => {
   if(to.name==='index'){
     bus.$emit('change');//绑定一个事件，让需要的组件去触发
   }
 console.log('afterEach')
-})
+}) */
