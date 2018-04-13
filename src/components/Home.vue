@@ -2,20 +2,23 @@
   <div class="home">
     <Banner/>
     <Menu/>
-    <Main/>
+    <Growgrass/>
+    <Like/>
   </div>
 </template>
 
 <script>
 import Banner from './Banner';
 import Menu from './Menu';
-import Main from './Main';
+import Growgrass from './Growgrass';
+import Like from './Like';
 export default {
   name:'Home',
   components:{
     Banner,
     Menu,
-    Main
+    Growgrass,
+    Like
   }
 }
 </script>

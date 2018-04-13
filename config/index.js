@@ -18,6 +18,13 @@ module.exports = {
         pathRewrite:{
           '^/mz':''//正则表达式，把以mz开头的字符串替换为空
         }
+      },
+      '/tb':{
+        target:'http://h5api.m.taobao.com/',
+        changeOrigin:true,
+        pathRewrite:{
+          '^/tb':''
+        }
       }
     },
 

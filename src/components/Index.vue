@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style>
-.index{flex:1;}
+.index{flex:1;overflow:auto;}
 </style>

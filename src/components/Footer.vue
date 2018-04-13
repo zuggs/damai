@@ -20,6 +20,7 @@ export default {
 <style lang="scss">
 .footer{
   display:flex;justify-content:space-around;height:.5rem;align-items:center;
+  background:#fff;
   >.footer-menu{
     display:flex;flex-direction:column;align-items:center;color:#999;
     >i{
