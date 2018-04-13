@@ -15,7 +15,7 @@
     </div>
 </template>
 <script>
-import data from '../../../../static/data.json'
+import data from '../../../static/data/data.json'
 export default {
   name: 'ItemBig',
   data() {

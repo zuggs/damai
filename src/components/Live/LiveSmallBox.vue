@@ -2,7 +2,7 @@
     <item-small class="small-box"></item-small>
 </template>
 <script>
-import ItemSmall from '../Live/LiveItemSmall'
+import ItemSmall from './LiveItemSmall.vue'
 export default {
   name: 'SmallBox',
   components: {

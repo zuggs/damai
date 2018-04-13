@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <router-link class="footer-menu" :to='{name:"index"}'>
-      <i class="fa fa-home"></i>
+      <i :class="cl"></i>
       <p>首页</p>
     </router-link>
     <router-link class="footer-menu" to='user'>
@@ -12,9 +12,25 @@
 </template>
 
 <script>
-export default {
-  name:'Footer'
+var footer={
+  name:'Footer',
+  data(){
+    return {
+      cl:'iconfont icon-damailogo'
+    }
+  }/* ,
+  created (){
+    router.afterEach((to, from) => {
+      if(to.name==='index'){
+        console.log(footer)
+      }
+    console.log('afterEach')
+    })
+  } */
 }
+//export default footer
+//import router from '../router/index'
+
 </script>
 
 <style lang="scss">

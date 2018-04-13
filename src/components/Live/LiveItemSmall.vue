@@ -17,7 +17,7 @@
 </div>
 </template>
 <script>
-import data from '../../../../static/data.json'
+import data from '../../../static/data/data.json'
 export default {
   name: 'ItemSmall',
   data() {
@@ -32,7 +32,7 @@ export default {
   },
   created(){
       // this.arr = [this.liveData1,this.liveData2,this.liveData3,this.liveData4]
-      console.log(this.liveData)
+      //console.log(this.liveData)
   }
 }
 </script>

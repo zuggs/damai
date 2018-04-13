@@ -44,7 +44,7 @@ export default {
           backgroundSize:"cover"
         }
         this.items=data.items;//url("//pimg.dmcdn.cn/perform/project/1443/144367_n.jpg?_t=1520747245632")
-        console.log(JSON.parse(r.data.data.result));
+        //console.log(JSON.parse(r.data.data.result));
       });
     }
   },
