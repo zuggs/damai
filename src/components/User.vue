@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .user{
-  flex:1;background:#f2f3f4;
+  flex:1;
   >.user-header{
     height:1rem;display:flex;background:#ff1268;color:#fff;align-items:center;
     margin-bottom:.2rem;

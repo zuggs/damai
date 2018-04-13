@@ -17,3 +17,6 @@ export default {
 
 
 </script>
+<style>
+#app{background:#f2f3f4;}
+</style>

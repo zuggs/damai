@@ -3,6 +3,7 @@
       <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="banner in banners" :key='banner.schema'>
             <img width="100%" :src="banner.pic" alt="banner.title">
+            <!-- :src="banner.pic" -->
           </div>    
       </div>
       <div class="swiper-pagination"></div>
@@ -13,6 +14,7 @@
 
 <script>
 import Swiper from 'swiper';//引入swiperjs文件
+import Vue from 'vue';
 import '../../node_modules/swiper/dist/css/swiper.min.css'//引入swiper的css文件
 export default {
   name:'Banner',
@@ -40,6 +42,15 @@ export default {
   created () {
     //console.log(this.$http)
     this.getBanners();
+    /* Vue.nextTick( ()=>{
+      new Swiper('.banner',{
+        pagination:{
+          el: '.swiper-pagination'
+        },
+        autoplay:true,
+        loop:true
+      });
+    }); */
   },
   updated () {
     new Swiper('.banner',{

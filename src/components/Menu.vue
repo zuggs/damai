@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 .menu{
   display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:.13rem;
+  background:#fff;
   .menu-list{
     >img{
       width:0.44rem;margin:0 .16rem
