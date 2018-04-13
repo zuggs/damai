@@ -18,18 +18,9 @@ export default{
     return {
       cl:'iconfont icon-damailogo'
     }
-  }/* ,
-  created (){
-    router.afterEach((to, from) => {
-      if(to.name==='index'){
-        console.log(footer)
-      }
-    console.log('afterEach')
-    })
-  } */
+  }
 }
-// footer
-//import router from '../router/index'
+
 
 </script>
 

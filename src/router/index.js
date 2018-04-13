@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '../components/Index';
 import User from '../components/User';
+import bus from '../module/bus';
 
 Vue.use(Router)
 
@@ -20,4 +21,10 @@ export default new Router({
       component: User
     }
   ]
+});
+router.afterEach((to, from) => {
+  if(to.name==='index'){
+    bus.$emit('change');//绑定一个事件，让需要的组件去触发
+  }
+console.log('afterEach')
 })
