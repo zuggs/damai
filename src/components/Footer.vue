@@ -12,7 +12,7 @@
 </template>
 
 <script>
-var footer={
+export default{
   name:'Footer',
   data(){
     return {
@@ -28,7 +28,7 @@ var footer={
     })
   } */
 }
-//export default footer
+// footer
 //import router from '../router/index'
 
 </script>

@@ -27,5 +27,5 @@ export default {
 </script>
 
 <style>
-.home{flex:1;}
+.home{flex:1;overflow: auto;}
 </style>
