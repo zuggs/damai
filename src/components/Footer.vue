@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <router-link class="footer-menu" :to='{name:"index"}'>
-      <i class="iconfont icon-damailogo"></i>
+      <i :class="cl"></i>
       <p>首页</p>
     </router-link>
     <router-link class="footer-menu" to='user'>
@@ -12,12 +12,22 @@
 </template>
 
 <script>
+import bus from '../module/bus'
 export default{
   name:'Footer',
-  data(){
+  data () {
     return {
-      //cl:''
+      cl:'iconfont icon-damailogo'
     }
+  },
+  mounted () {
+    bus.$on('change',type=>{
+      if(type===1){
+        this.cl='iconfont icon-damailogo';
+      }else{
+        this.cl='fa fa-home';        
+      }
+    })
   }
 }
 

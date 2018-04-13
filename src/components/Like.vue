@@ -1,10 +1,10 @@
 <template>
   <div class="like">
     <div class="guess-hd">
-      <i class='fa fa-gratipay'></i> 猜你喜欢
+      －－<i class='fa fa-gratipay'></i> 猜你喜欢－－
     </div>
 	<div class="guess-bt">
-		<Likelist/>
+		<Likelist v-for='list in lists' :key='list.project_id' :data='list'/>
 	</div>
   </div>
 </template>
@@ -18,7 +18,12 @@ export default {
 	  Likelist
   },
   data (){
-    
+    return {
+      lists :JSON.parse(datalist.result).data
+    }
+  },
+  created () {
+    console.log(this.lists)
   }
 }
 </script>
@@ -27,6 +32,10 @@ export default {
 .like{
     .guess-hd{
 		font-size:.18rem;font-weight:700;text-align:center;padding:.24rem 0;
+    }
+    .guess-bt{
+      padding:0 .16rem;flex-wrap:wrap;justify-content:space-between;
+      display:flex;
     }
 }
 </style>
