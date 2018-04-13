@@ -1,17 +1,16 @@
 <template>
 <div>
-  <div class="small" v-for="(item,i) in liveData" :key='i'>
+  <div class="small" v-for="(item,i) in arr[num]" :key='i'>
     <div class="small-t">
-      <img width="100%" :src="liveData[i].project_pic" alt="">
-      <p>{{liveData[i].project_name}}</p>
+      <img width="100%" :src="arr[num][i].project_pic" alt="">
+      <p>{{arr[num][i].project_name}}</p>
     </div>
     <div class="small-b">
-      <h4>{{liveData[i].tips}}</h4>
-      <span>{{liveData[i].sell_tag}}</span>
+      <h4>{{arr[num][i].tips}}</h4>
+      <span>{{arr[num][i].sell_tag}}</span>
     </div>
-    
 </div>
-<div @click="num++" class="huanyihuan">换一换
+<div @click="numChange()" class="huanyihuan">换一换
   <i class="iconfont icon-huanyihuan"></i>
   </div>
 </div>
@@ -20,20 +19,28 @@
 import data from '../../../static/data/data.json'
 export default {
   name: 'ItemSmall',
+  props: ['type'],
   data() {
     return {
-        liveData: (JSON.parse(data.data.result).category_module[0].items).slice(0,6),
-        liveData2: (JSON.parse(data.data.result).category_module[0].items).slice(6,12),
-        liveData3: (JSON.parse(data.data.result).category_module[0].items).slice(12,18),
-        liveData4: (JSON.parse(data.data.result).category_module[0].items).slice(18,24),
-        //arr:[liveData1,liveData2,liveData3,liveData4],
+        arr:[(JSON.parse(data.data.result).category_module[this.type].items).slice(0,6),
+        (JSON.parse(data.data.result).category_module[this.type].items).slice(6,12),
+        (JSON.parse(data.data.result).category_module[this.type].items).slice(12,18),
+        (JSON.parse(data.data.result).category_module[this.type].items).slice(18,24)],
         num: 0
     }
   },
-  created(){
-      // this.arr = [this.liveData1,this.liveData2,this.liveData3,this.liveData4]
-      //console.log(this.liveData)
+  methods: {
+    numChange() {
+      
+      if(this.type!=2){
+        this.num++
+        if(this.num==4){
+          this.num=0
+        }
+      }
+    }
   }
+
 }
 </script>
 <style lang="scss" scoped>
@@ -48,6 +55,7 @@ export default {
         display: block;
         margin-bottom: 5px;
         border-radius: 3px;
+        height: 1.47rem;
       }
       p{
         position: absolute;
@@ -92,3 +100,4 @@ export default {
     padding-bottom: 6px;
             }
 </style>
+
