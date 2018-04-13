@@ -3,7 +3,10 @@
     <Banner/>
     <Menu/>
     <Growgrass/>
-    <Live/>
+    <Live type="0"/>
+    <Live type="1"/>
+    <Live type="2"/>
+    <Live type="3"/>
 <!--     <Like/> -->
   </div>
 </template>

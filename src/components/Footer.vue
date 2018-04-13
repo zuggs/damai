@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <router-link class="footer-menu" :to='{name:"index"}'>
-      <i :class="cl"></i>
+      <i class="iconfont icon-damailogo"></i>
       <p>首页</p>
     </router-link>
     <router-link class="footer-menu" to='user'>
@@ -16,7 +16,7 @@ var footer={
   name:'Footer',
   data(){
     return {
-      cl:'iconfont icon-damailogo'
+      //cl:''
     }
   }/* ,
   created (){

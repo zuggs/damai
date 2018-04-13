@@ -8,8 +8,8 @@
           </div>
       </div>
       <div class="live-content">
-          <item-big></item-big>
-          <small-box></small-box>
+          <item-big :type="type"></item-big>
+          <small-box :type="type"></small-box>
           
       </div>
   </div>
@@ -20,12 +20,13 @@ import ItemBig from './Live/LiveItemBig'
 import SmallBox from './Live/LiveSmallBox'
 export default {
   name: 'LiveShow',
+  props: ['type'],
   components: {
       ItemBig,SmallBox
   },
   data() {
     return {
-        liveData: JSON.parse(data.data.result).category_module[0]
+        liveData: JSON.parse(data.data.result).category_module[this.type]
     }
   }
 }
@@ -56,7 +57,6 @@ export default {
         }
         .live-content{
             padding: 0 12px 15px;
-            height: 6.7rem;
             
         }
     }

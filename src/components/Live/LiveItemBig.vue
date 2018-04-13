@@ -1,5 +1,5 @@
 <template>
-    <div class="item-big">
+    <div v-if="this.type!=3" class="item-big">
         <img width="100%" :src="liveData.project_config_pic" alt="">
         <p class="big-tag">
             <span class="big-tag-city">{{liveData.city_name.substr(0,2)}}</span>
@@ -18,9 +18,10 @@
 import data from '../../../static/data/data.json'
 export default {
   name: 'ItemBig',
+  props: ['type'],
   data() {
     return {
-        liveData: JSON.parse(data.data.result).category_module[0].big_item
+        liveData: JSON.parse(data.data.result).category_module[this.type].big_item
     }
   }
 }
