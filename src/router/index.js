@@ -6,7 +6,7 @@ import bus from '../module/bus';
 
 Vue.use(Router)
 
-export default new Router({
+var router=new Router({
   routes: [
     {
       path: '',
@@ -22,9 +22,15 @@ export default new Router({
     }
   ]
 });
-/* Router.afterEach((to, from) => {
+router.afterEach((to, from) => {
   if(to.name==='index'){
-    bus.$emit('change');//绑定一个事件，让需要的组件去触发
+    bus.$emit('change',1);//绑定一个事件，让需要的组件去触发
+  }else if(to.name==='user'){
+    bus.$emit('change',2);
   }
-console.log('afterEach')
-}) */
+  //console.log('afterEach')
+});
+
+
+
+export default router;

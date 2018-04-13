@@ -7,7 +7,7 @@
     <Live type="1"/>
     <Live type="2"/>
     <Live type="3"/>
-<!--     <Like/> -->
+    <Like/>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import Banner from './Banner';
 import Menu from './Menu';
 import Live from './Live';
 import Growgrass from './Growgrass';
-//import Like from './Like';
+import Like from './Like';
 export default {
   name:'Home',
   components:{
@@ -24,7 +24,7 @@ export default {
     Menu,
     Live,
     Growgrass,
-    //Like
+    Like
   }
 }
 </script>
