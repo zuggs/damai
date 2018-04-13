@@ -3,6 +3,7 @@
       <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="banner in banners" :key='banner.schema'>
             <img width="100%" :src="banner.pic" alt="banner.title">
+            <!-- :src="banner.pic" -->
           </div>    
       </div>
       <div class="swiper-pagination"></div>

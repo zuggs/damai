@@ -4,17 +4,21 @@
       <i class='fa fa-gratipay'></i> 猜你喜欢
     </div>
 	<div class="guess-bt">
-		<Likelist v-for=""/>
+		<Likelist/>
 	</div>
   </div>
 </template>
 
 <script>
 import Likelist from './Likelist'
+import datalist from '../../static/data/like.json'
 export default {
   name:'like',
   components:{
 	  Likelist
+  },
+  data (){
+    
   }
 }
 </script>
