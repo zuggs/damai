@@ -12,7 +12,7 @@ export default {
   name:'likelist',
   props:['data'],
   created(){
-    console.log(this.data)
+    //console.log(this.data)
   }
 }
 </script>

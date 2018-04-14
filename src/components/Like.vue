@@ -23,7 +23,7 @@ export default {
     }
   },
   created () {
-    console.log(this.lists)
+    //console.log(this.lists)
   }
 }
 </script>
