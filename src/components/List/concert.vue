@@ -3,16 +3,12 @@
 <template>
 <div class="concert">
     <list_top/>
-<<<<<<< HEAD
     <Intro v-for='(list,i) in lists' :list='list' :key='i'/>
-=======
->>>>>>> ltl-damai
 </div>
 </template>
 
 <script>
 import List_top from './List_top'
-<<<<<<< HEAD
 import Intro from './Intro'
 export default {
     data(){
@@ -41,11 +37,6 @@ export default {
     components:{
         List_top,
         Intro
-=======
-export default {
-    components:{
-        List_top
->>>>>>> ltl-damai
     }
 }
 </script>
