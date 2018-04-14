@@ -34,7 +34,8 @@ var router=new Router({
     },{
       path:'/concert',
       name:'concert',
-      component:Concert
+      component:Concert,
+      props:true
     }
   ]
 });
