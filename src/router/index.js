@@ -5,6 +5,7 @@ import Main from '../components/Main';
 import User from '../components/User';
 import bus from '../module/bus';
 import Concert from '../components/List/concert';
+import Search from '../components/Search';
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ var router=new Router({
       name:'concert',
       component:Concert,
       props:true
+    },{
+      path:'/search',
+      name:'search',
+      component:Search
     }
   ]
 });

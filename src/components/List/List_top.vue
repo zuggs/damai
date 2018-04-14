@@ -2,6 +2,7 @@
 
 <template>
 <div class="list_top">
+<<<<<<< HEAD
     <ul>
         <li :class='cl(i)' v-for='(list,i) in lists' :key='i'>{{list}}</li>
     </ul>
@@ -10,11 +11,15 @@
         <li>推荐排序 <i class="fa fa-angle-down"></i></li>
         <li>不限 <i class="fa fa-angle-down"></i></li>
     </ul>    
+=======
+    
+>>>>>>> ltl-damai
 </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
     name:'ListTop',
     props:{
         ind:{
@@ -37,10 +42,14 @@ export default {
             }
         }
     }
+=======
+
+>>>>>>> ltl-damai
 }
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 .list_top{    
     >ul{
         border-bottom:1px solid #f2f3f4;
@@ -57,6 +66,10 @@ export default {
 }
 .border{
     border-bottom: 2px solid #ff1268;color:#000!important;
+=======
+.list_top{
+    height:.45rem;background:pink;
+>>>>>>> ltl-damai
 }
 </style>
 
