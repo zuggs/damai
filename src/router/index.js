@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '../components/Index';
+import Main from '../components/Main';
 import User from '../components/User';
 import bus from '../module/bus';
+import Concert from '../components/List/concert';
 
 Vue.use(Router)
 
@@ -10,15 +12,29 @@ var router=new Router({
   routes: [
     {
       path: '',
-      redirect: '/index'//路由重定向，当路径为空时，进入的路由路径
+      redirect: '/main'//路由重定向，当路径为空时，进入的路由路径
     },{
-      path: '/index',
-      name: 'index',
-      component: Index
-    },{   
-      path: '/user',
-      name: 'user',
-      component: User
+      path: '/main',
+      name: 'main',
+      component: Main,
+      children:[
+        {
+          path: '',
+          redirect: 'index',
+        },{
+          path: 'index',
+          name: 'index',
+          component: Index
+        },{   
+          path: 'user',
+          name: 'user',
+          component: User
+        }
+      ]
+    },{
+      path:'/concert',
+      name:'concert',
+      component:Concert
     }
   ]
 });
