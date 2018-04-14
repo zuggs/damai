@@ -4,7 +4,7 @@
       <i :class="cl"></i>
       <p>首页</p>
     </router-link>
-    <router-link class="footer-menu" to='user'>
+    <router-link class="footer-menu" :to='{name:"user"}'>
       <i class="fa fa-user"></i>
       <p>我的大麦</p>
     </router-link>

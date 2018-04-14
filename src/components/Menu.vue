@@ -1,9 +1,11 @@
 <template>
   <div class="menu">
-      <div class="menu-list" v-for="menu of menus" :key='menu.schema'>
+      <router-link v-for="(menu,i) in menus"
+      tag='div' class="menu-list" :to='{name:list[i]}'
+      :key='menu.schema'>
         <img :src="menu.pic" alt="">
         <p>{{menu.title}}</p>
-      </div>
+      </router-link>
   </div> 
 </template>
 
@@ -13,13 +15,16 @@ export default {
   name:'Menu',
   data () {
       return {
-        menus:[]
+        menus:[],
+        list:['concert','concert','concert','concert',
+        'concert','concert','concert','concert']
       }
   },
   methods:{
     getBanners () {
       this.$http.get('/mz/v1/home/852').then( r=>{
-        this.menus=r.data.menu.items
+        this.menus=r.data.menu.items;
+        //console.log(this.menus)
       })
     }
   },
