@@ -8,9 +8,9 @@
               <div class="item-show">
                   <img :src="src" alt="">
                   <div class="item-show_right">
-                      <p>{{projectData.data.project_basic_info.project_name}}</p>
-                      <p>{{projectData.data.project_basic_info.city_name}}</p>
-                      <p>{{(projectData.data.project_basic_info.price_range).slice(0,-1)}} <span>元</span></p>
+                      <p>{{info.project_name}}</p>
+                      <p>{{info.city_name}}</p>
+                      <p>{{pri}} <!-- <span>元</span> --></p>
                   </div>
               </div>
           </div>
@@ -28,13 +28,13 @@
           </div>
           <div class="project-desc">
               <div class="cell">
-                  <span>{{projectData.data.project_basic_info.show_time}}</span>
+                  <span>{{info.show_time}}</span>
                   <i class="iconfont icon-jiantou"></i>
               </div>
           </div>
           <div class="project-city">
               <div class="city">
-                  <span>{{projectData.data.venue.venue_name}}</span>
+                  <span>{{ven}}</span>
               </div>
           </div>
           <div class="project-card intro">
@@ -42,7 +42,7 @@
                   <h4>介绍</h4>
               </div>
               <div class="card-bd">
-                  <p>{{projectData.data.project_summary.description}}</p>
+                  <p>{{der}}</p>
               </div>
               <div class="card-ft">
                   <div>更多图文介绍
@@ -89,8 +89,17 @@ export default {
           projectData: {},
           src: '',
           id:'',
+          info:{},
           features: [],
-          ticketNotes: []
+          ticketNotes: [],
+          ven:'',
+          der:''
+      }
+  },
+  computed:{
+      pri (){
+          var a=this.info.price_range;
+          return a
       }
   },
   methods: {
@@ -98,10 +107,13 @@ export default {
           this.$http.get('/mz/v1/proj/'+this.id+'?t=152385842704').then(res=>{
               //console.log(res)
               //144367?t=1523858427048
-              this.projectData = res
+              this.projectData = res;
+              this.info=this.projectData.data.project_basic_info;
               this.src=res.data.project_basic_info.project_pic
               this.features = res.data.features
               this.ticketNotes = res.data.ticket_notes
+              this.ven=this.projectData.data.venue.venue_name
+              this.der=this.projectData.data.project_summary.description;
               //console.log(this.ticketNotes,this.src)
           })
       }
@@ -118,6 +130,7 @@ export default {
         display: flex;
         height: 100%;
         overflow: auto;
+        margin-bottom:48px;
         .detail-show{
             width: 100%;
             .project-item{
