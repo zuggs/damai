@@ -1,6 +1,8 @@
 
 <template>
-<div class="intro">
+<router-link tag='div' class="intro" :to='{
+    name:"project",params:{id:list.id}
+    }'>
     <img :src="list.verticalPic" alt="">
     <ul>
         <li class="title">{{list.subTitle}}</li>
@@ -13,7 +15,7 @@
         </li>
         <li class="sub">{{list.subHead}}</li>
     </ul>
-</div>
+</router-link>
 </template>
 
 <script>

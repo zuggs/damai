@@ -3,9 +3,10 @@ import Router from 'vue-router';
 import Index from '../components/Index';
 import Main from '../components/Main';
 import User from '../components/User';
+import register from '../components/register';
+import login from '../components/login';
 import bus from '../module/bus';
-import Concert from '../components/List/concert';
-import Search from '../components/Search';
+import listPage from '../components/List/listPage';
 
 Vue.use(Router)
 
@@ -33,14 +34,18 @@ var router=new Router({
         }
       ]
     },{
-      path:'/concert',
-      name:'concert',
-      component:Concert,
+      path:'/list',
+      name:'listPage',
+      component:listPage,
       props:true
     },{
-      path:'/search',
-      name:'search',
-      component:Search
+      path:'/register',
+      name:'register',
+      component:register
+    },{
+      path:'/login',
+      name:'login',
+      component:login
     }
   ]
 });

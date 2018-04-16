@@ -1,7 +1,12 @@
 <template>
   <div class="menu">
       <router-link v-for="(menu,i) in menus"
-      tag='div' class="menu-list" :to='{name:list[i]}'
+      tag='div' class="menu-list" 
+      :to='{name:"listPage",query:{
+          type:list[i],
+          ind:i+1
+        }
+      }'
       :key='menu.schema'>
         <img :src="menu.pic" alt="">
         <p>{{menu.title}}</p>
@@ -16,8 +21,8 @@ export default {
   data () {
       return {
         menus:[],
-        list:['concert','concert','concert','concert',
-        'concert','concert','concert','concert']
+        list:['concert','modern_drama','music','concert',
+        'comic_dialog','parent_child','casual','concert']
       }
   },
   methods:{

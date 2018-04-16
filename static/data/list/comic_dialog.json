@@ -1,0 +1,416 @@
+{
+    "api": "mtop.damai.wireless.search.search",
+    "data": {
+        "projectInfo": [
+            {
+                "logicDynamicLabel": "相声热度榜TOP10",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "曲苑杂坛热度榜TOP10",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "曲苑杂坛热度榜TOP10",
+                            "相声热度榜TOP10",
+                            "德云社热门相声",
+                            "曲苑杂坛畅销榜TOP10",
+                            "相声畅销榜TOP10"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139552",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "德云社三庆园",
+                "venueId": 60898,
+                "subHead": "酣畅淋漓的视听盛宴，民间文化艺术渊远流长",
+                "id": 139552,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 4366,
+                "venueName": "三庆园",
+                "priceStr": "50,60,80,100,120,380,500",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选曲苑杂坛畅销榜TOP10",
+                "name": "2018德云社北京相声大会——三庆园",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1395/139552_n.jpg",
+                "formattedPriceStr": "50-500"
+            },
+            {
+                "logicDynamicLabel": "德云社热门相声",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "德云社热门相声",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "曲苑杂坛热度榜TOP10",
+                            "相声热度榜TOP10",
+                            "德云社热门相声",
+                            "曲苑杂坛畅销榜TOP10",
+                            "相声畅销榜TOP10"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139609",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "三里屯德云社剧场",
+                "venueId": 1168,
+                "subHead": "弘扬民族文化，培养曲艺人才",
+                "id": 139609,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 2768,
+                "venueName": "德云社三里屯剧场",
+                "priceStr": "100,120,160,200,280,2000",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选相声热度榜TOP10",
+                "name": "2018德云社北京相声大会——三里屯德云社剧场",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1396/139609_n.jpg",
+                "formattedPriceStr": "100-2000"
+            },
+            {
+                "logicDynamicLabel": "德云社热门相声",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "德云社热门相声",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "德云社热门相声"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139562",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "天桥德云社相声",
+                "venueId": 1170,
+                "subHead": "民间艺术文化渊远流长",
+                "id": 139562,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 2056,
+                "venueName": "天桥德云社剧场",
+                "priceStr": "30,40,50,60,80,100,150,200,300,500,600,800,1000",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选德云社热门相声",
+                "name": "2018德云社北京相声大会——天桥德云社剧场",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1395/139562_n.jpg",
+                "formattedPriceStr": "30-1000"
+            },
+            {
+                "logicDynamicLabel": "相声热度榜TOP10",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "相声热度榜TOP10",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "曲苑杂坛热度榜TOP10",
+                            "相声热度榜TOP10",
+                            "德云社热门相声"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139556",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "新街口德云社",
+                "venueId": 92051,
+                "subHead": "酣畅淋漓的视听盛宴，民间文化艺术渊远流长",
+                "id": 139556,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 2762,
+                "venueName": "德云社相声大会新街口剧场",
+                "priceStr": "100,120,160,200,280,3800",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选曲苑杂坛热度榜TOP10",
+                "name": "2018德云社北京相声大会——新街口德云社",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1395/139556_n.jpg",
+                "formattedPriceStr": "100-3800"
+            },
+            {
+                "favourable": "0|||9|||亲子套票500元（原价280*2）；亲子套票700元（原价380*2）；家庭套票700元（原价280*3）；家庭套票1000元（原价380*3）|||0",
+                "promotionTags": [
+                    "套票"
+                ],
+                "logicLabelInfo": {},
+                "siteStatus": 3,
+                "_prism_dk": "141977",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": " 2018马戏小丑嘉年华",
+                "venueId": 2,
+                "subHead": "全新的国际马戏小丑嘉年华又来工体啦！",
+                "id": 141977,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "2018.06.01-06.02",
+                "logicAddress": "北京",
+                "ipvuv": 3925,
+                "venueName": "工人体育馆",
+                "priceStr": "100,180,280,380,500,580,700,1000",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "name": "快乐六一· 2018马戏小丑嘉年华",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1419/141977_n.jpg?_t=1520313085342",
+                "formattedPriceStr": "100-1000"
+            },
+            {
+                "logicDynamicLabel": "德云社热门相声",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "德云社热门相声",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "德云社热门相声"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139554",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "广德楼戏园相声专场",
+                "venueId": 925,
+                "subHead": "京城文化艺术宝地，各名伶才艺会聚之所！",
+                "id": 139554,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 1248,
+                "venueName": "广德楼戏园",
+                "priceStr": "100,120,300,450,600",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选德云社热门相声",
+                "name": "2018德云社北京相声大会——广德楼戏园",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1395/139554_n.jpg",
+                "formattedPriceStr": "100-600"
+            },
+            {
+                "logicDynamicLabel": "德云社热门相声",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "德云社热门相声",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "德云社热门相声"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "139588",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "德云社相声",
+                "venueId": 212,
+                "subHead": "京城时尚文化会聚之地！",
+                "id": 139588,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 1041,
+                "venueName": "湖广会馆",
+                "priceStr": "40,50,80,100,150,200",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选德云社热门相声",
+                "name": "2018德云社北京相声大会——湖广会馆",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1395/139588_n.jpg",
+                "formattedPriceStr": "40-200"
+            },
+            {
+                "logicDynamicLabel": "相声热度榜TOP10",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "相声畅销榜TOP10",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "曲苑杂坛热度榜TOP10",
+                            "相声热度榜TOP10",
+                            "德云社热门相声",
+                            "曲苑杂坛畅销榜TOP10",
+                            "相声畅销榜TOP10"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "143923",
+                "isEticket": false,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "德云红酒之夜",
+                "venueId": 26,
+                "subHead": "德云社各地分社演出票房持续火爆，也从一定程度上说明了好的相声在各地都是有很大市场的。",
+                "id": 143923,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "艺人: 郭德纲",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "2018.06.02-08.31",
+                "logicAddress": "北京",
+                "ipvuv": 3400,
+                "venueName": "北京展览馆剧场",
+                "priceStr": "280,380,580,780,980,1000,1280,1580",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "入选相声畅销榜TOP10",
+                "name": "德云红酒之夜郭德纲暨德云社相声专场演出",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1439/143923_n.jpg?_t=1519802876704",
+                "formattedPriceStr": "280-1580"
+            },
+            {
+                "logicDynamicLabel": "戏曲热度榜TOP10",
+                "favourable": "",
+                "promotionTags": [],
+                "logicLabelInfo": {
+                    "randomDynamicLabel": "戏曲热度榜TOP10",
+                    "dynamicLabelInfo": {
+                        "PROJECT_CLASS": [
+                            "戏曲热度榜TOP10"
+                        ]
+                    }
+                },
+                "siteStatus": 3,
+                "_prism_dk": "147308",
+                "isEticket": false,
+                "collectNum": 0,
+                "recReasonType": 1,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "2018青曲社苗阜王声相声巡演",
+                "venueId": 26,
+                "subHead": "且看\"喵汪\"说学逗唱谝长安，\"青曲\"生冷蹭倔论古今。",
+                "id": 147308,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "艺人: 苗阜、王声",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "2018.06.24 19:30",
+                "logicAddress": "北京",
+                "ipvuv": 538,
+                "venueName": "北京展览馆剧场",
+                "priceStr": "180,280,380,580,780,980",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "recReason": "参演艺人：苗阜、王声",
+                "name": "Mailive—— “一哏一笑”2018青曲社苗阜王声相声全球巡演北京站",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1473/147308_n.jpg?_t=1522727151523",
+                "formattedPriceStr": "180-980"
+            },
+            {
+                "favourable": "0|||9|||1199元（原价700*2）；1799元（原价700*3）；5人包厢2999元；6人包厢3699元|||0",
+                "promotionTags": [
+                    "套票"
+                ],
+                "logicLabelInfo": {},
+                "siteStatus": 3,
+                "_prism_dk": "137617",
+                "isEticket": true,
+                "collectNum": 0,
+                "recReasonType": 2,
+                "tours": "",
+                "cityName": "北京",
+                "subTitle": "北京刘老根大舞台",
+                "venueId": 979,
+                "subHead": "北京刘老根大舞台",
+                "id": 137617,
+                "isSelectSeat": true,
+                "venueCity": "北京",
+                "actores": "",
+                "isNewItem": 0,
+                "showTag": "",
+                "showTime": "常年",
+                "logicAddress": "北京",
+                "ipvuv": 511,
+                "venueName": "刘老根大舞台北京剧场",
+                "priceStr": "380,480,580,680,700,780,880,900,980,1199,1799,2999,3699",
+                "isGeneralAgent": true,
+                "tourProjects": [],
+                "name": "北京刘老根大舞台",
+                "verticalPic": "https://pimg.dmcdn.cn/perform/project/1376/137617_n.jpg?_t=1520217766364",
+                "formattedPriceStr": "380-3699"
+            }
+        ],
+        "total": 105,
+        "_prism_lk": {
+            "_qid": "2283a541-3fea-11e8-bb37-37806578550c",
+            "_skey": "2283a540-3fea-11e8-bb37-836aecede9f8"
+        }
+    },
+    "ret": [
+        "SUCCESS::调用成功"
+    ],
+    "v": "1.0"
+}

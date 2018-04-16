@@ -2,8 +2,11 @@
 
 <template>
 <div class="list_top">
-    <ul>
-        <li :class='cl(i)' v-for='(list,i) in lists' :key='i'>{{list}}</li>
+    <ul class="listMenu">
+        <li 
+        :class='cl(i)' v-for='(list,i) in lists' 
+        @click='cg(i)' 
+        :key='i'>{{list}}</li>
     </ul>
     <ul class="range">
         <li>北京 <i class="fa fa-angle-down"></i></li>
@@ -24,7 +27,9 @@ export default {
     data () {
         return{
             lists:['全部','演唱会','话剧格局','音乐会','体育比赛',
-        '曲苑杂坛','儿童亲子','展览休闲','电影']
+        '曲苑杂坛','儿童亲子','展览休闲','电影'],
+            li:['concert','modern_drama','music','concert',
+        'comic_dialog','parent_child','casual','concert']
         }     
     },
     methods:{
@@ -35,7 +40,20 @@ export default {
             }else{
                 return '';
             }
+        },
+        cg (i) {
+            this.$router.replace({name:"listPage",query:{
+                    type:this.li[i-1],
+                    ind:i
+                }
+            });
+            location.reload();
         }
+    },
+    mounted(){
+        var ul=document.querySelector('.listMenu');
+        var li=document.querySelector('.listMenu>li:nth-child('+this.ind+')');
+        ul.scrollLeft=li.offsetLeft;
     }
 }
 </script>

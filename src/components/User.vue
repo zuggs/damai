@@ -2,7 +2,10 @@
   <div class="user">
     <div class="user-header">
       <img src="//gw.alicdn.com/tfs/TB1o4Bodr_I8KJjy1XaXXbsxpXa-150-150.png" alt="tou">
-      <p>登录/注册</p>
+      <router-link tag='p'
+      :to='{name:"login"}'
+      >{{user}}</router-link>
+      <div v-if='user!=="登录/注册"' class="loginoff" @click='login_off'> 退出</div>
     </div>
     <div class="user-lists">
       <div class="user-list" v-for="list of lists" :key="list.id">
@@ -30,8 +33,21 @@ export default {
         {id:4,title:'我想看的',icon:'fa fa-heart-o'},
         {id:5,title:'收货地址',icon:'fa fa-map-marker'},
         {id:6,title:'常用购票人',icon:'fa fa-user-circle-o'}
-      ]
+      ],
+      user:''
     }
+  },
+  methods:{
+    getuser(){
+      this.user=localStorage.userinfo?localStorage.userinfo:'登录/注册';
+    },
+    login_off(){
+      localStorage.removeItem('userinfo');
+      location.reload();
+    }
+  },
+  created(){
+    this.getuser();
   }
 }
 </script>
@@ -47,6 +63,9 @@ export default {
     }
     >p{
       font-size:.14rem;
+    }
+    >.loginoff{
+      margin-left:.3rem;font-size:16px;
     }
   }
   >.user-lists{  

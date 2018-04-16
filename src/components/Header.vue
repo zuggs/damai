@@ -4,10 +4,10 @@
       <span class="header_city_name">北京</span>
       <i class="fa fa-angle-down"></i>
     </div>
-    <router-link tag="div" to="/search" class="header_search">
+    <div class="header_search">
       <i class="fa fa-search"></i>
       搜索明星、演唱会、场馆
-    </router-link>
+    </div>
   </header>  
 </template>
 <script>
