@@ -7,6 +7,8 @@ import register from '../components/register';
 import login from '../components/login';
 import bus from '../module/bus';
 import listPage from '../components/List/listPage';
+import Search from '../components/Search';
+import Detail from '../components/detail';
 
 Vue.use(Router)
 
@@ -46,6 +48,15 @@ var router=new Router({
       path:'/login',
       name:'login',
       component:login
+    },{
+      path:'/search',
+      name:'search',
+      component:Search
+    },{
+      path: '/project',
+      name: 'project',
+      component: Detail,
+      props:true
     }
   ]
 });

@@ -1,7 +1,7 @@
 
 <template>
 <router-link tag='div' class="intro" :to='{
-    name:"project",params:{id:list.id}
+    name:"project",query:{id:list.id}
     }'>
     <img :src="list.verticalPic" alt="">
     <ul>
