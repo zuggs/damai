@@ -118,6 +118,7 @@ export default {
         display: flex;
         height: 100%;
         overflow: auto;
+        margin-bottom: 48px;
         .detail-show{
             width: 100%;
             .project-item{

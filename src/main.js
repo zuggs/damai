@@ -6,7 +6,9 @@ import router from './router';//引入路由
 import './stylesheets/main.scss';//引入scss文件
 import axios from 'axios';//因为在node-modules，所以可以直接使用，不用加路径
 import { Lazyload } from 'mint-ui';//引入mint-ui的Lazyload组件
+import LyTab from 'ly-tab';
 
+Vue.use(LyTab);
 Vue.use(Lazyload);
 Vue.config.productionTip = false;
 Vue.prototype.$http=axios;
